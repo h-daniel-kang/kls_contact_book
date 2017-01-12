@@ -3,10 +3,12 @@ var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 var app = express();
+var uri='mongodb://k.hoon:raulg7@ds149207.mlab.com:49207/contect_book';
 
 //DB setting
-mongoose.connect(process.env.MONGO_DB);
+mongoose.connect('mongodb://k.hoon:raulg7@ds149207.mlab.com:49207/contect_book');
 var db = mongoose.connection;
+
 
 db.once('open', function(){
   console.log('DB connected');
