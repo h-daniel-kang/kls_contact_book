@@ -21,6 +21,7 @@ db.on('error',function(err){
 //Other setting
 app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/public'));
+app.set('views', __dirname + '/views');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(methodOverride("_method"));
