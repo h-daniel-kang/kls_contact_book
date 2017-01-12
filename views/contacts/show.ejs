@@ -17,17 +17,17 @@
         <div>
           <tabel>
             <tr>
+              <td>&nbsp</td>
               <td><a href="sms:<%= contact.phone %>"><img src="/images/sms.png"></a></td>
-              <td></td>
-              <td><a href="tel:<%= contact.phone %>"><img src="/images/phone-call.png"></a></td>
+              <td>&nbsp</td>
             </tr>
           </table>
         </div>
         <div>
-          <label>tel. : </label><span><%= contact.phone %></span>
+          <label>tel. : </label><span><%= contact.phone %>  </span><a href="tel:<%= contact.phone %>"><img src="/images/phone-call.png"></a>
         </div>
         <div>
-          <label>e-mail : </label><a href="mailto:<%= contact.email %>"><span><%= contact.email %></span></a>
+          <label>e-mail : </label><span><%= contact.email %>  </span><a href="mailto:<%= contact.email %>"><img src="/images/mail.png"></a>
         </div>
         <div>
           <label>교회 : </label><span><%= contact.church %></span>
