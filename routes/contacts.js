@@ -2,7 +2,7 @@
 
 var express = require('express');
 var router = express.Router();
-var Contact = require('../models/Contact');
+var Contact = require('/home/hosting_users/jjbusd/apps/jjbusd_klscontactbook/models/Contact');
 
 // Contacts - Index
 router.get('/', function(req, res){

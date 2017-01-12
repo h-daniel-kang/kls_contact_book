@@ -26,8 +26,8 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.use(methodOverride("_method"));
 
 // Routes
-app.use('/', require('./routes/home'));
-app.use('/contacts', require('./routes/contacts'));
+app.use('/', require('/home/hosting_users/jjbusd/apps/jjbusd_klscontactbook/routes/home'));
+app.use('/contacts', require('/home/hosting_users/jjbusd/apps/jjbusd_klscontactbook/routes/contacts'));
 
 // Port setting
 app.listen(8001, function(){
