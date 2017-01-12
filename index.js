@@ -28,6 +28,6 @@ app.use('/', require('./routes/home'));
 app.use('/contacts', require('./routes/contacts'));
 
 // Port setting
-app.listen(3000, function(){
+app.listen(8001, function(){
   console.log('server on!');
 });
